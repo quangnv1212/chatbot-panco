@@ -1,10 +1,9 @@
 <!DOCTYPE html>
+<html lang="en">
     <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-
-        <title></title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Chatbot</title>
         <meta name="description" content="">
 
         <link rel="shortcut icon" href="favicon.ico">
@@ -12,11 +11,29 @@
         <link rel="stylesheet" href="css/normalize.css">
         <link rel="stylesheet" href="css/html5-boilerplate.css">
         <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/styles.css">
     </head>
 
     <body>
         <p>Hello Front Row Viewers!</p>
 
+        <!-- Chatbot Button -->
+        <button id="chatbot-button">Chat with us</button>
+
+        <!-- Chatbot Container -->
+        <div id="chatbot-container" class="hidden">
+            <div id="chatbot-header">
+                <h2>Support Chat</h2>
+                <button id="close-chatbot">X</button>
+            </div>
+            <div id="chatbot-body">
+                <!-- Chatbot messages will go here -->
+            </div>
+            <div id="chatbot-footer">
+                <input type="text" id="chatbot-input" placeholder="Type a message...">
+                <button id="send-message">Send</button>
+            </div>
+        </div>
 
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.2.min.js"><\/script>')</script>
